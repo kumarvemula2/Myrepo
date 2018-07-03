@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>AzureResourceGroup1</Name>
+    <Description>VM creation</Description>
+    <ProjectType>DeploymentProject</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AzureResourceGroup1</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="AzureResourceGroup1.deployproj" File="AzureResourceGroup1.deployproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="Deploy-AzureResourceGroup.ps1">Deploy-AzureResourceGroup.ps1</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Deployment.targets">Deployment.targets</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WindowsVirtualMachine.json">WindowsVirtualMachine.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WindowsVirtualMachine.parameters.json">WindowsVirtualMachine.parameters.json</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

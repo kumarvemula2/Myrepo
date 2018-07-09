@@ -1,5 +1,9 @@
-<<<<<<< HEAD
+
+
 new files changes
-=======
+
 this is new and conflict
->>>>>>> conflict
+
+
+
+
